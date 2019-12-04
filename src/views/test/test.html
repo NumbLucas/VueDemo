@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+<body>
+  <button onclick="btnClick()">test</button>
+</body>
+<script>
+      $.ajaxSetup({
+      error: function (x, e) {
+        console.log('err');
+        
+        return false;
+      }
+    });
+  function btnClick() {
+    console.log('click')
+    var random = Math.random()
+
+
+    $.getJSON("http://localhost:10000?/random=" + random + "jsoncallback=?", null, function (data) {
+
+      console.log('data:', data);
+
+    })
+    // $.post("http://localhost:10000",
+    //   {
+    //       name:"菜鸟教程",
+    //       url:"http://www.runoob.com"
+    //   },
+    //   function(data,status){
+    //       alert("数据: \n" + data + "\n状态: " + status);
+    //   });
+  }
+</script>
+
+</html>

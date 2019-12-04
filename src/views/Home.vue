@@ -8,6 +8,7 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
+// import {Button} from 'element-ui'
 
 export default {
   name: 'home',
