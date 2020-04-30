@@ -13,7 +13,7 @@
     "core-js": "^3.3.2",
     "echarts": "^4.5.0",
     "element-ui": "^2.12.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "nodejs-websocket": "^1.7.2",
     "normalize.css": "^8.0.1",
     "register-service-worker": "^1.6.2",
